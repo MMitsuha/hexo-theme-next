@@ -38,8 +38,8 @@ custom_file_path:
 # Schemes
 #scheme: Muse
 #scheme: Mist
-scheme: Pisces
-#scheme: Gemini
+#scheme: Pisces
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -71,8 +71,8 @@ creative_commons:
   license: by-nc-sa
   # Available values: big | small
   size: small
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   language:
@@ -101,8 +101,8 @@ open_graph:
 menu:
   home: / || fa fa-home
   about: /about/ || fa fa-user
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
+  #tags: /tags/ || fa fa-tags
+  #categories: /categories/ || fa fa-th
   friends: /friends/ || fa fa-link
   #archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
@@ -338,7 +338,7 @@ calendar:
 
 # Preload styles and preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
-preconnect: false
+preconnect: true
 
 # Set the text alignment in posts / pages.
 text_align:
@@ -365,29 +365,29 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: default
-    dark: stackoverflow-dark
+    light: github
+    dark: github-dark-dimmed
   prism:
     light: prism
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: mac
   # Fold code block
   fold:
-    enable: false
+    enable: true
     height: 500
   # Display language name
-  language: false
+  language: true
 
 back2top:
   enable: true
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -481,11 +481,11 @@ exturl_icon: true
 
 # Google Webmaster tools verification.
 # See: https://developers.google.com/search
-google_site_verification:
+google_site_verification: Eu0uQYpKZX6Sx1fdlifKq0tyJnqDfDvRkD1G2XFhyAE
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmasters
-bing_site_verification:
+bing_site_verification: 727D1DF0A0AC0A64A8481B3E086EEE18
 
 # Yandex Webmaster tools verification.
 # See: https://webmaster.yandex.ru
@@ -591,7 +591,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://apoorv.pro/lozad.js/demo/
-lazyload: false
+lazyload: true
 
 # Automatically insert whitespace between CJK and half-width characters.
 # For more information: https://github.com/vinta/pangu.js
@@ -623,8 +623,8 @@ quicklink:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: true
-  async: false
+  enable: false
+  async: true
   duration: 200
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
@@ -639,7 +639,7 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: false
+  enable: true
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
   color: blue
@@ -811,7 +811,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
